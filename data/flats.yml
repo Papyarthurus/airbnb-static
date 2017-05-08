@@ -1,26 +1,32 @@
 mathieu:
   owner_name: Matthieu Reboul
+  nick_name: Mathieu
   picture: card-paris.jpg
   owner_picture: math.jpeg
   name: Math's home
-  summary: Charming room in Montmartre
+  summary: Charming room in Montmartre.
   city: Paris, France
+  panoramic: panoramic_paris.jpg
   wifi: true
 
 arthur:
   owner_name: Arthur Renaud
+  nick_name: Arthur
   picture: card-london.jpeg
   owner_picture: arthur.jpeg
   name: Arthur's home
-  summary: Nice flat in Piccadilly
+  summary: Nice flat in Piccadilly.
   city: London, UK
+  panoramic: panoramic_london.jpg
   wifi: false
 
 clement:
   owner_name: Clement Berger
+  nick_name: Clément
   picture: 'http://unsplash.it/150/150'
   owner_picture: clement.jpeg
   name: Clement's home
-  summary: Nice flat in Piccadilly
-  city: London, UK
+  summary: Nice flat in Brussels.
+  city: Brussels, Belgium
+  panoramic: panoramic_brussels.jpg
   wifi: false
