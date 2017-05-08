@@ -47,18 +47,22 @@ title: Le Wagon Middleman boilerplate
       <div class="container">
         <h2 class="text-center">Can't wait to take off !!</h2>
         <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
-              <div class="card-category">Paris</div>
-              <div class="card-description">
-                <h2>Papyarthurus' home</h2>
-                <p>Amazing flat with its lovely terrace.</p>
+          <% data.flats.each do |key, value| %>
+            <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path value[:picture] %>');">
+                <div class="card-category"><%= value[:city] %></div>
+                <div class="card-description">
+                  <h2><%= value[:name] %></h2>
+                  <p><%= value[:summary] %></p>
+                </div>
+                <%= image_tag value[:owner_picture], class: "card-user avatar avatar-large" %>
+                <%= link_to "Wagon", "flats/#{key}.html", class: "card-link" %>
               </div>
-              <%= image_tag "arthur.jpeg", class: "card-user avatar avatar-large" %>
-              <a class="card-link" href="#" ></a>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
+          <% end %>
+        </div>
+
+<!--           <div class="col-xs-12 col-sm-4">
             <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
               <div class="card-category">Brussels</div>
               <div class="card-description">
@@ -80,7 +84,7 @@ title: Le Wagon Middleman boilerplate
               <a class="card-link" href="#" ></a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 

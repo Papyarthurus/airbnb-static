@@ -56,6 +56,10 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+data.flats.each do |member, value|
+  proxy "/flats/#{member}.html", "/flats/show.html", locals: { owner: member }, ignore: true
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment

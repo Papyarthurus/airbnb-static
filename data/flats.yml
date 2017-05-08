@@ -1,0 +1,26 @@
+mathieu:
+  owner_name: Matthieu Reboul
+  picture: card-paris.jpg
+  owner_picture: math.jpeg
+  name: Math's home
+  summary: Charming room in Montmartre
+  city: Paris, France
+  wifi: true
+
+arthur:
+  owner_name: Arthur Renaud
+  picture: card-london.jpeg
+  owner_picture: arthur.jpeg
+  name: Arthur's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  wifi: false
+
+clement:
+  owner_name: Clement Berger
+  picture: 'http://unsplash.it/150/150'
+  owner_picture: clement.jpeg
+  name: Clement's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  wifi: false
